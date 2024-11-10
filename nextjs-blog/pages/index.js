@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Search</title>
+        <title>DantAI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <div class={[styles.home_input, styles.container]} > {/**fix this alignment shit */}
+        <div className={[styles.home_input, styles.container]} > {/**fix this alignment shit */}
           <Prompt/>
 {/* now after this shit runs, pass the reseults as a prop/child to the prompt component */}
         </div>

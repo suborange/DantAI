@@ -6,7 +6,7 @@ export default function Prompt() {
     const [response, setResponse] = useState("");
 
     const handleSubmit = async (e) => {
-        // console.log('f');
+        console.log('AHHHH');
         e.preventDefault();
  // only call the backend one time! instead of chaining network calls back and forth
         try {
@@ -24,7 +24,7 @@ export default function Prompt() {
           setResponse(result.message); // get the message returned
         //   setResponse(data.choices[0]?.message?.content || "No response from API");
           
-        } catch (error) {
+        } catch (error) { // get 404 error?
           console.error("Error:", error);
           setResponse("Error fetching response from API");
         }
@@ -33,12 +33,12 @@ export default function Prompt() {
     return (
         <div>
             <form onSubmit={handleSubmit}> {/** .then() chain here? render the results page with the results?  */}
-                <textarea class={styles.input} value={input} onChange={(e) => setInput(e.target.value)} placeholder='Please enter your prompt...'>
+                <textarea className={styles.input} value={input} onChange={(e) => setInput(e.target.value)} placeholder='Please enter your prompt...'>
                 </textarea>
-
-            </form>
-            <button class={styles.prompt} type='submit'> &gt;Prompt&lt;
+                <button className={styles.prompt} type='submit'> &gt;Prompt&lt;
             </button>
+            </form>
+            
 
 
         </div>
