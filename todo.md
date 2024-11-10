@@ -24,6 +24,7 @@ cd nex
 # questions
 - how do i rename/redo hierarchy all this shit to fit my repo?
 - way to approach getting input and then calling api's? as a component? a script? (my copmonents folder, etc...)
-- env file in next?
+- how to return the state variable back to parent, go to another route and be passed to another component in this route
+
+
 - the point of value attribute and with use state, etc. [is for control, value attribute allows for instant control, can be dosplayed. with var.value, is only recieved when user clicks the button ONLY. so one you alwyas have the data on change, the other only on submti (kinda)]
--

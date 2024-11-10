@@ -19,6 +19,7 @@ export default function Prompt() {
           });
 
           const result = await res.json();// if this is backend, then this data would be the result(s)
+          console.log(`full cycle result:: ${result}`)
           // take the result and pass it back to home
           setResponse(result.message); // get the message returned
         //   setResponse(data.choices[0]?.message?.content || "No response from API");

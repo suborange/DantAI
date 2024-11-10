@@ -4,6 +4,7 @@
 const puppeteer = require('puppeteer');
 // require("dotenv").config();
 import dotenv from 'dotenv';
+dotenv.config();
 // GOOGLE API SHIT
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const genAI = new GoogleGenerativeAI(process.env.NEXT_PUBLIC_API_KEY);
@@ -24,19 +25,22 @@ export default async function handler(req, res) {
     const prompt_query = req.body.prompt;
     const full_prompt = prompt_head + prompt_query;
 
-    console.log(`User prompt ${full_prompt}`);
+    console.log(`User prompt:: ${full_prompt}`);
 
     const response = await model.generateContent(full_prompt);     // if this is backend, then this data would be the result(s)
+    console.log(`Prompt Type:: ${response}`);
     const prompt_type = response.promptType; // should get this from the json returning?
-    console.log(`Prompt Type: ${prompt_type}`);
+    console.log(`Prompt Type:: ${prompt_type}`);
 
     // can maybe do substring for math, knowledge, fact
     switch (prompt_type) {
         case factual:
             // code for calling ??
+            res.status(200).json({ message: "factual prompt in progress..." })  
             break;
         case knowledge:
             // code for calling ??
+            res.status(200).json({ message: "knowledge prompt in progress..." })  
             break;
         case mathematical:
             // code for calling wolfram alpha - use puppeteer... my fav!
@@ -90,7 +94,7 @@ export default async function handler(req, res) {
                 res.status(200).json({ message: prompt_result })  
                 console.log(`Found an answer HERE!: ${text}`);
               } else {
-                console.log('<p class="t-p"> element not found');
+                console.log('<p class=".ParseAndRender_general-styles__zAx0s.t-p"> element not found');
               }
 
             });
