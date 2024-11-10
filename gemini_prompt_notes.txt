@@ -1,0 +1,34 @@
+- facutal query: 
+what kind of prompt is this:
+
+Does this paragraph have spelling mistakes: 'The phat cat jumped over the larje chare'
+
+
+Show drafts
+
+
+This is a factual query or a yes/no question. It's a straightforward request for information, asking whether a specific piece of text contains spelling errors.
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+- knowledge-based query
+
+what kind of prompt is this: how many letter R are in the word strawberry?
+
+
+Show drafts
+
+
+This is a knowledge-based query. It's a question that requires accessing and processing information to provide a specific answer. In this case, the query requires identifying specific letters within a given word.
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+- mathmatical query
+
+what kind of prompt is this: what is (2+2) * sqrt(10)
+
+
+
+Show drafts
+
+
+This is a mathematical query. It's a question that requires performing calculations to arrive at a numerical answer. In this case, it involves basic arithmetic and a square root operation.

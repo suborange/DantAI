@@ -1,0 +1,24 @@
+# types of questions:
+
+- open ended:
+
+'what kind of prompt is this: what technology will help me teach my english class?
+ChatGPT said:
+ChatGPT
+The prompt, "What technology will help me teach my English class?" is an open-ended question prompt, also known as an exploratory prompt.'
+
+
+- calculation prompt:
+ChatGPT said:
+ChatGPT
+The prompt "What is (2+2) * sqrt(10)" is a calculation prompt. It’s a type of query that requires a mathematical operation to solve.
+
+
+- character analysis or counting:
+what kind of prompt is this: how many letter R are in the word strawberry?
+ChatGPT said:
+ChatGPT
+The prompt "How many letter Rs are in the word strawberry?" is a counting prompt or a character analysis prompt. 
+
+- proofreading or error-detection:
+The prompt "Does this paragraph have spelling mistakes: 'The phat cat jumped over the larje chare'" is a proofreading or error-detection prompt.
