@@ -24,7 +24,7 @@ export default async function handler(req, res) {
     const prompt_query = req.body.prompt;
     const full_prompt = prompt_head + prompt_query;
 
-    console.log(`User prompt ${full_prompt}`); 
+    console.log(`User prompt ${full_prompt}`);
 
     const response = await model.generateContent(full_prompt);     // if this is backend, then this data would be the result(s)
     const prompt_type = response.promptType; // should get this from the json returning?
@@ -42,20 +42,21 @@ export default async function handler(req, res) {
             // code for calling wolfram alpha - use puppeteer... my fav!
             const url = 'https://www.wolframalpha.com/'; // the website url to try and access, for login
             const boturl = 'https://bot.sannysoft.com/'; // test if you look like a bot or not
-            
+
             // MAIN FUNCTION
             (async () => {
-            
+
                 // SETUP PAGE
                 const browser = await puppeteer.launch();
                 let page = await browser.newPage();
                 await page.goto(url, {
                     waitUntil: "networkidle2",
                 });
-
+            })
 
             break;
     }
+
 
 
 
