@@ -20,7 +20,7 @@ export default function Prompt() {
 
           const result = await res.json();// if this is backend, then this data would be the result(s)
           // take the result and pass it back to home
-          setResponse(result); 
+          setResponse(result.message); // get the message returned
         //   setResponse(data.choices[0]?.message?.content || "No response from API");
           
         } catch (error) {
