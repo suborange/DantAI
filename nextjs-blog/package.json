@@ -7,7 +7,9 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.5",
     "next": "latest",
+    "puppeteer": "^23.7.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
