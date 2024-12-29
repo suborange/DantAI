@@ -12,7 +12,7 @@ This is a factual query or a yes/no question. It's a straightforward request for
 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 - knowledge-based query
 
-what kind of prompt is this: how many letter R are in the word strawberry?
+what kind of prompt is this: how many letter "R" are in the word strawberry?
 
 
 Show drafts

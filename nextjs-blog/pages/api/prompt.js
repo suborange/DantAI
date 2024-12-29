@@ -113,7 +113,7 @@ Does this sentence have spelling mistakes: 'The phat cat jumped over the larje c
       console.log(`rest of string : ${restOfString}`); // looks good!
       // code to call spelling api
 
-      // const response = await fetch(sapl_endpoint, {
+      // const response2 = await fetch(sapl_endpoint, {
       //   method: 'POST',
       //   headers: {
       //     'Content-Type': 'application/json',
@@ -132,8 +132,8 @@ Does this sentence have spelling mistakes: 'The phat cat jumped over the larje c
       const response2 = await axios.post(
         'https://api.sapling.ai/api/v1/edits',
         {
-          "key": `${sapl_key}`, // replace with your API key
-          "session_id": 'test session',
+          key: `${sapl_key}`, // replace with your API key
+          session_id: 'test session',
           restOfString,
         },
       );
